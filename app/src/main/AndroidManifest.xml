@@ -15,12 +15,14 @@
         <activity
             android:name=".practice1"
             android:exported="true" />
-
         <activity
-            android:name=".LogIn"
+            android:name=".Signup2Activity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".LogInActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SignupActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

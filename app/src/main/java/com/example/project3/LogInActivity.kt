@@ -1,5 +1,6 @@
 package com.example.project3
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -11,7 +12,7 @@ import android.widget.Toast
 //import android.widget.Toast
 //import kotlinx.android.synthetic.main.activity_log_in.sign_up
 
-class LogIn : AppCompatActivity() {
+class LogInActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_log_in)
@@ -31,7 +32,8 @@ class LogIn : AppCompatActivity() {
         sign_up.setOnClickListener {
 //            회원가입 누르면 해당 페이지로 넘어가는것
 //            id가 1810019이면서 비밀번호가 1234 이면 관리자입니다 뜨게하기
-
+            val moveToSignup = Intent(this, SignupActivity::class.java)
+            startActivity(moveToSignup)
             Log.d("로그인화면 로그", "회원가입버튼눌림")
 
         }
