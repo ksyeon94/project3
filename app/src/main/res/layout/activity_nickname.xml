@@ -31,7 +31,38 @@
             android:layout_height="wrap_content"
             android:text="닉네임 변경"/>
 
+
     </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="전화번호"
+        />
+    <EditText
+        android:id="@+id/phoneNumberEdt"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="전화번호를 입력하세요"/>
+    <Button
+        android:id="@+id/callBtn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="전화연결"/>
+    <Button
+        android:id="@+id/sendBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="문자전송"/>
+    <Button
+        android:id="@+id/goToNaver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="네이버로 가기"/>
+    <Button
+        android:id="@+id/invite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="초청하기"/>
 
 
 </LinearLayout>
